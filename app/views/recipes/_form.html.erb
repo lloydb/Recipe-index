@@ -1,0 +1,20 @@
+<% form_for(@recipe) do |recipe_form| %>
+  <%= recipe_form.error_messages %>
+
+  <p>
+    <%= recipe_form.label :MainCategory %><br />
+    <%= recipe_form.text_field :cim %>
+  </p>
+  <p>
+    <%= recipe_form.label :Recipe %><br />
+    <%= recipe_form.text_field :recipe %>
+  </p>
+  <p>
+    <%= recipe_form.label :PubPage %><br />
+    <%= recipe_form.text_field :pub_page %>
+  </p>
+
+  <p>
+    <%= recipe_form.submit "Save" %>
+  </p>
+<% end %>

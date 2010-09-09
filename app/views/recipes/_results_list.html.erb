@@ -1,0 +1,21 @@
+<table width=100%>
+<tr bgcolor=#ffff99 >
+<th align=left>CIM</th>
+<th align=left>Recipe</th>
+<th align=left>Location</th>
+</tr>
+
+<% @recipes.each do |rec| %>
+  <tr>
+    <td><%= rec.cim %></td>
+    <td><%= 
+      link_to_unless(rec.href.blank?, rec.recipe, rec.href, {:target => "recipe"}) do
+      rec.recipe
+      end
+    %></td>
+    <td>
+    <%= rec.pub_page %>
+    </td>
+  </tr>
+<% end %>
+</table>

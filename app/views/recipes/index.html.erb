@@ -1,0 +1,28 @@
+<h1>Listing recipes</h1>
+
+<table width=80%>
+  <tr align=left>
+    <th>ID</th>
+    <th>Main Category</th>
+    <th>Recipe</th>
+    <th>Location</th>
+    <th/>
+    <th/>
+  </tr>
+
+<% @recipes.each do |recipe| %>
+  <tr>
+    <td><%=h recipe.id %></td>
+    <td><%=h recipe.MainCategory %></td>
+    <td><%=h recipe.Recipe %></td>
+    <td><%=h recipe.PubPage %></td>
+    <td><%= link_to 'Show', recipe %></td>
+    <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Home', root_path %> |
+<%= link_to 'New recipe', new_recipe_path %>
