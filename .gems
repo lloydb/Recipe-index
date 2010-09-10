@@ -1,1 +1,2 @@
-'sqlite3-ruby' 
+rails -v 3.0.0
+sqlite3-ruby 
