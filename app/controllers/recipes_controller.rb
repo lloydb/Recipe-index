@@ -78,7 +78,7 @@ class RecipesController < ApplicationController
 	# The duplication of columns is so that we can find:
 	#   cim recipe & recipe cim
  
-	@recipes = Recipe.all(:conditions=> ["cim||recipe||pub_page||cim||ingredients||recipe||cim||pub_page||ingredients like ?", search_expression], :order => "cim", :limit => 500)
+	@recipes = Recipe.all(:conditions=> ["lower(cim||recipe||pub_page||cim||ingredients||recipe||cim||pub_page||ingredients) like ?", search_expression], :order => "cim", :limit => 500)
 	render :partial => "results_list", :layout => false
   end
 

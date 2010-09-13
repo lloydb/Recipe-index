@@ -1,4 +1,3 @@
-id|recipe|cim|pub_page|ingredients
 -2146764388|Easy Ideas For Turnip Leaves|[::]|RIVERFORD .||http://www.riverford.co.uk/feed/recipes/by:category/quick_ideas/easy-ideas-for-turnip-leaves/
 -2146681156|Cumin Coleslaw|[Salad:Spices:]|/|Cabbage:Chilli|
 -2146648676|Roast Fillet Of Beef With Provençal Tomatoes|[Plate:Red Meat:Oven]|RS-FRENCH 162—3, 163|Beef:Tomato|
