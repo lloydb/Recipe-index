@@ -1,0 +1,5 @@
+.echo ON
+delete from recipes;
+.import recipe.txt recipes
+select count(*) from recipes;
+.exit
