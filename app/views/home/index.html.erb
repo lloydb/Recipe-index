@@ -1,6 +1,6 @@
 <table width=100%>
 <tbody>
-<tr align="center"><th id='pageTitle'>Lloyd's Ruby Recipe Search home</th></tr>
+<tr align="center"><th id='pageTitle'>Lloyd's <%= Recipe.count %> Recipe Search</th></tr>
 <tr align="center">
 <td>Enter keywords: <input type=text id='keyWords' value='' size=40 onchange="<%= remote_function(
    	   :update => "searchResults",
